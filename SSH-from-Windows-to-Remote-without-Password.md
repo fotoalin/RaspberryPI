@@ -14,3 +14,5 @@ type C:\Users\alin\.ssh\id_rsa.pub | ssh pi@192.168.128.225 'cat >> .ssh/authori
 ```
 ssh pi@192.168.128.225
 ```
+
+<a href="https://www.hanselman.com/blog/how-to-use-windows-10s-builtin-openssh-to-automatically-ssh-into-a-remote-linux-machine">Ref</a>
