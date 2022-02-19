@@ -7,7 +7,7 @@ ssh-keygen -t rsa -b 4096
 ```
 
 ### 2. Copy public key from your windows local machine to remote automatically
-# NOTE: the folrder .ssh needs to exist on the raspberry pi machine
+#### NOTE: the folrder .ssh needs to exist on the raspberry pi machine
 ```
 type C:\Users\alin\.ssh\id_rsa.pub | ssh pi@192.168.128.225 'cat >> .ssh/authorized_keys'
 
