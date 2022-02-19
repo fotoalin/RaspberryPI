@@ -23,7 +23,7 @@ click on the username, then click OK, OK, Apply, OK, OK
 
 ### 3. Connect automaticaly to remote 
 ```
-ssh pi@192.168.128.225
+ssh pi@192.168.128.225 -i id_rsa
 ```
 
 
