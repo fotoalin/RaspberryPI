@@ -7,8 +7,10 @@ ssh-keygen -t rsa -b 4096
 ```
 
 ### 2. Copy public key from your windows local machine to remote automatically
+# NOTE: the folrder .ssh needs to exist on the raspberry pi machine
 ```
 type C:\Users\alin\.ssh\id_rsa.pub | ssh pi@192.168.128.225 'cat >> .ssh/authorized_keys'
+
 ```
 ### 3. Connect automaticaly to remote 
 ```
@@ -16,3 +18,5 @@ ssh pi@192.168.128.225
 ```
 
 <a href="https://www.hanselman.com/blog/how-to-use-windows-10s-builtin-openssh-to-automatically-ssh-into-a-remote-linux-machine">Ref</a>
+
+
