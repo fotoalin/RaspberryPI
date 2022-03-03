@@ -13,7 +13,7 @@ type C:\Users\alin\.ssh\id_rsa.pub | ssh pi@192.168.128.225 'cat >> .ssh/authori
 
 ```
 ### 4. Set the permissions for ssh key file
-For windows:
+On windows:
 ```
 right-click on 'id_rsa.pub' > Properties > Security > Advanced > Add
 click on 'Select a principal'
@@ -23,7 +23,7 @@ click on the username, then click OK, OK, Apply, OK, OK
 
 ### 3. Connect automaticaly to remote 
 ```
-ssh pi@192.168.128.225 -i id_rsa
+ssh pi@192.168.128.225 -i C:\Users\Alin/.ssh/id_rsa
 ```
 
 
