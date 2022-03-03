@@ -12,8 +12,8 @@ ssh-keygen -t rsa -b 4096
 type C:\Users\alin\.ssh\id_rsa.pub | ssh pi@192.168.128.225 'cat >> .ssh/authorized_keys'
 
 ```
-### 4. Set the permissions for ssh key file
-On windows:
+### 3. Set the permissions for ssh key file
+On local Windows computer:
 ```
 right-click on 'id_rsa.pub' > Properties > Security > Advanced > Add
 click on 'Select a principal'
@@ -21,13 +21,29 @@ write your username, then click on 'Check Names'
 click on the username, then click OK, OK, Apply, OK, OK
 ```
 
-### 3. Connect automaticaly to remote 
+### 4. Connect automaticaly to remote 
 ```
 ssh pi@192.168.128.225 -i C:\Users\Alin/.ssh/id_rsa
 ```
 
 
+### 5 Disable existing enabled site
+```
+sudo unlink /etc/nginx/sites-enabled/default
+```
+
+### 6 Ensable desired site
+```
+sudo ln -s /etc/nginx/sites-available/webdev.local /etc/nginx/sites-enabled/
+```
+
+### 7 Restart nginx server without downtime
+```
+systemctl reload nginx
+```
+
 
 <a href="https://www.hanselman.com/blog/how-to-use-windows-10s-builtin-openssh-to-automatically-ssh-into-a-remote-linux-machine">Ref</a>
+
 
 
